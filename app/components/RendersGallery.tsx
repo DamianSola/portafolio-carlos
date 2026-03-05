@@ -57,12 +57,12 @@ export default function RendersGallery() {
 
   const goToPrev = useCallback(() => {
     if (lightboxIndex === null) return;
-    setLightboxIndex((prev) => (prev === 0 ? RENDER_IMAGES.length - 1 : prev - 1));
+    setLightboxIndex((prev) => (prev === null || prev === 0 ? RENDER_IMAGES.length - 1 : prev - 1));
   }, [lightboxIndex]);
 
   const goToNext = useCallback(() => {
     if (lightboxIndex === null) return;
-    setLightboxIndex((prev) => (prev === RENDER_IMAGES.length - 1 ? 0 : prev + 1));
+    setLightboxIndex((prev) => (prev === null || prev === RENDER_IMAGES.length - 1 ? 0 : prev + 1));
   }, [lightboxIndex]);
 
   useEffect(() => {
