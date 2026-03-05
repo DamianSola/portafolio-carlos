@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Paletas de colores para estilos de arquitectura */
+:root,
+[data-theme="warm"] {
+  --bg-primary: #f5f3ef;
+  --bg-secondary: #ffffff;
+  --text-primary: #2c2c2c;
+  --text-secondary: #5a5a5a;
+  --text-muted: #7a7a7a;
+  --accent: #8b7355;
+  --accent-light: #a89078;
+  --border: #e5e2dc;
+  --card-bg: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="mono"] {
+  --bg-primary: #f8f8f8;
+  --bg-secondary: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #6b6b6b;
+  --accent: #2c2c2c;
+  --accent-light: #4a4a4a;
+  --border: #e0e0e0;
+  --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="earth"] {
+  --bg-primary: #f4f1ec;
+  --bg-secondary: #faf9f7;
+  --text-primary: #2d2a26;
+  --text-secondary: #5c5549;
+  --text-muted: #7a7368;
+  --accent: #6b5344;
+  --accent-light: #8b7363;
+  --border: #e8e4de;
+  --card-bg: rgba(250, 249, 247, 0.95);
+}
+
+[data-theme="noir"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
+  --text-primary: #f5f5f5;
+  --text-secondary: #b8b8b8;
+  --text-muted: #888888;
+  --accent: #c9a96e;
+  --accent-light: #d4b87d;
+  --border: #333333;
+  --card-bg: rgba(36, 36, 36, 0.9);
+}
+
+@theme inline {
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Suavizado de scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Líneas divisorias elegantes */
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--accent);
+  margin: 1rem 0;
+}
