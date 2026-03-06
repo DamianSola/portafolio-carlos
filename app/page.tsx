@@ -62,7 +62,10 @@ export default function Home() {
               Estudiante avanzado de arquitectura con sólido dominio de herramientas de dibujo,
               renders y visualizaciones arquitectónicas, así como el uso de inteligencias
               artificiales orientadas a la optimización de planos y presentaciones.
+              <br />
+              Cuento además con experiencia en obra a pequeña escala, participando en el diseño y ejecución  de la misma, lo que me permitió adquirir experiencia práctica en obra y comprender mejor la relación entre el proyecto y su materializacion
             </p>
+            
           </div>
         </section>
 
@@ -315,7 +318,7 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="mailto:carlos.sola.z.95@mail.com"
+              href="mailto:carlos.sola.z.95@gmail.com"
               className="group flex items-center gap-4 rounded-xl border px-6 py-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
               style={{
                 borderColor: "var(--border)",
@@ -351,7 +354,7 @@ export default function Home() {
                   Mail
                 </span>
                 <span className="font-medium" style={{ color: "var(--text-primary)" }}>
-                  carlos.sola.z.95@mail.com
+                  carlos.sola.z.95@gmail.com
                 </span>
               </div>
               <svg
